@@ -4,16 +4,17 @@
 using namespace std;
 
 int main(){
-  int i;
+  ios_base::sync_with_stdio(false);
+  long long i;
   cin >> i;
   int arr[i];
-  int sum = 0;
-  int arrsum = 0;
-  for(int j = 1; j <= i; j++){
-	  sum += j;
-  }
+  long long sum = (i*(i+1))/2;
+  long long arrsum = 0;
+  //for(long long j = 1; j <= i; j++){
+	//  sum += j;
+  //}
   arr[0] = 0;
-  for(int k = 1; k < i; k++){
+  for(long long k = 1; k < i; k++){
 	  cin >> arr[k];
 	  arrsum += arr[k];
   }
