@@ -1,1 +1,1 @@
-# CodeforcesProblemSet
+# CompetetiveCodingProblems
