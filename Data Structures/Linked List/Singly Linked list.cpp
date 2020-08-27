@@ -32,5 +32,14 @@ void InsertToList(list **l, int x){
 /* Deletion from List */
 
 void DeleteElement(list *l, int x){
-
+    list *node = l;
+    if(node == NULL){
+	return;	
+}
+	while((node->next)->data!=x){
+	node = node->next;	
+	}
+list *skip = new list();
+node->next = skip->next;
+delete skip;
 }
