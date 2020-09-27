@@ -8,7 +8,8 @@ for i in range(number):
     printf("Enter Name of Problem : ")
     problem = str(input())
     os.mkdir("G:\Contests\" + contest_name + "\" + problem)
-    code_file = ("G:\Contests" + contest_name + "\" + problem + "\" + problem + ".cpp", "w+")
-    question_file = ("G:\Contests" + contest_name + "\" + problem + "\" + problem + ".txt", "w+")
-    stdin = ("G:\Contests" + contest_name + "\" + problem + "\" + "input.txt", "w+")
-    stdout = ("G:\Contests" + contest_name + "\" + problem + "\" + "output.txt", "w+")
+    code_file = open("G:\Contests" + contest_name + "\" + problem + "\" + problem + ".cpp", "w+")
+    question_file = open("G:\Contests" + contest_name + "\" + problem + "\" + problem + ".txt", "w+")
+    stdin = open("G:\Contests" + contest_name + "\" + problem + "\" + "input.txt", "w+")
+    stdout = open("G:\Contests" + contest_name + "\" + problem + "\" + "output.txt", "w+")
+    
